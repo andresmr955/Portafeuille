@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portefeuille</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--En-tête de menu-->
+        <div class="conteneur-header">
+            <header>
+                <div class="logo">
+                    <a href="">AndresM</a>
+                </div>
+                <nav id="nav" /*class="responsive"*/>
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">ACCUEIL</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">QUI SUIS-JE?</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">COMPÉTENCES</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="#portafolio" onclick="seleccionar()">PORTEFEUILLE</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTER</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+        </div>
+
+        <!-- SECCION INICIO-->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="conteneur-img">
+                    <img src="./images/photoperfil.png" alt="">
+                </div>
+                <h1>ANDRES MARQUEZ</h1>
+                <h2>Software Developer</h2>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+        </section>
+        <!--SECCION ABOUT ME-->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>A propos de moi</h2>
+                <p><span>Salut Je suis Andres Marquez</span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At accusamus impedit doloribus sapiente fugit cumque quae, quia similique vero quisquam debitis repudiandae dolorum. Quisquam dicta minima, dolore molestias provident at!</p>
+
+                <div class="fila">
+                    <!--datos personales-->
+                    <div class="col">
+                        <h3>Datos personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleanos</strong>
+                                09-01-1999
+                            </li>
+                            <li>
+                                <strong>Telefono</strong>
+                                + 1 9179407361
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                andresmr955@gmail.com
+                            </li>
+                            <li>
+                                <strong>Website</strong>
+                                www.example.com
+                            </li>
+                            <li>
+                                <strong>Direccion </strong>
+                                3546 Rue Cartier Montreal, Quebec H2K 4G2
+                            </li>
+                            <li>
+                                <strong>Cargo</strong>
+                                <span>FREELANCE</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--intereses-->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MOTOS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Musique</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-plane-departure"></i>
+                            <span>Viajar</span>
+                        </div>
+                    </div>
+                        </div>
+                </div>
+                <button>
+                    Descargar CV <i class="fa-sharp fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </section>
+
+        <!--SECCION SKILLS-->
+        <section class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+                <div class="fila">
+                    <!--Technical Skills-->
+                    <div class="col">
+                        <h3>Technical Skills</h3>
+                        <div class="skill">
+                            <span>HTML & CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso htmlcss">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso javascript">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>.NET</span>
+                            <div class="barra-skill">
+                                <div class="progreso NET">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Python</span>
+                            <div class="barra-skill">
+                                <div class="progreso Python">
+                                    <span>65%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>PHP</span>
+                            <div class="barra-skill">
+                                <div class="progreso PHP">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>C</span>
+                            <div class="barra-skill">
+                                <div class="progreso C">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>SQL</span>
+                            <div class="barra-skill">
+                                <div class="progreso SQL">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>GITHUB</span>
+                            <div class="barra-skill">
+                                <div class="progreso GITHUB">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Professional Skills-->
+                    <div class="col">
+                        <h3>Professional Skills</h3>
+                        <div class="skill">
+                            <span>Comunicacion</span>
+                            <div class="barra-skill">
+                                <div class="progreso Comunicacion">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Trabajo en Equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso Tequipo">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Creatividad</span>
+                            <div class="barra-skill">
+                                <div class="progreso Creatividad">
+                                    <span>98%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Dedicacion</span>
+                            <div class="barra-skill">
+                                <div class="progreso Dedicacion">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Proyect Management</span>
+                            <div class="barra-skill">
+                                <div class="progreso PManagement">
+                                    <span>84%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Work ethic.
+                            </span>
+                            <div class="barra-skill">
+                                <div class="progreso Wethic">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Time management</span>
+                            <div class="barra-skill">
+                                <div class="progreso Tmanagement">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECCION CURRICULUM-->
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educacion</h3>
+                        <div class="item izq">
+                            <h4>Programacion y Desarrollo de Software</h4>
+                            <span class="casa"><strong>PLATZI</strong></span>
+                            <span class="fecha">2020 - 2023</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ut ex magnam cum magni repellendus minima. Expedita autem voluptates sint unde doloribus voluptatibus architecto, eos ducimus vitae atque temporibus cumque?</p>
+                            <div class="conectori">
+                                <div class="circuloi">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="col derecha">
+                        <h3>Expreiencia de trabajo</h3>
+                        <div class="item der">
+                            <h4>Front Developer</h4>
+                            <span class="casa">Nombre de la compañia</span>
+                            <span class="fecha">2020 - 2023</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ut ex magnam cum magni repellendus minima. Expedita autem voluptates sint unde doloribus voluptatibus architecto, eos ducimus vitae atque temporibus cumque?</p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>  
+                    </div>                  
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION PORTAFOLIO-->
+        <section id="portafolio" class="portafolio">
+            <div class="contenido-seccion">
+                <h2>PORTAFOLIO</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="./images/images.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Diseno Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./images/images.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Diseno Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./images/images.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Diseno Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./images/images.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Diseno Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./images/images.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Diseno Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- SECCION CONTACTO-->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                                    <!-- FORMULARIO-->
+
+                    <div class="col">
+                        <input type="text" placeholder="Tu nombre" name="" id="">
+                        <input type="text" placeholder="Numero telefonico" name="" id="">
+                        <input type="text" placeholder="Direccion de correo" name="" id="">
+                        <input type="text" placeholder="Tema" name="" id="">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje <i class="fa-sharp fa-solid fa-envelope-open"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                    <!-- MAPA-->
+                    <div class="col">
+                        <img  src="./images/location.png"  alt="">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-regular fa-compass"></i>
+                                    Canada, Quebec, Montreal 3546 Rue Cartier 
+                                </li>
+                                <li>
+                                    <i class="fa-sharp fa-solid fa-mobile"></i>
+                                    Appelle moi: +1 917-940-73-61
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Email: andresmr955@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- FOOTER-->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+</html>
