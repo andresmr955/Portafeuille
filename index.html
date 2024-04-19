@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portefeuille</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
+   
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
 <body>
     <!--En-tête de menu-->
@@ -293,13 +298,19 @@
             <div class="contenido-seccion">
                 <h2>PORTAFOLIO</h2>
                 <div class="galeria">
+                    <a href="https://nutrition-label-pt9n.vercel.app/" target="_blank">
                     <div class="proyecto">
-                        <img src="./images/images.jpeg" alt="">
-                        <div class="overlay">
-                            <h3>Diseno Creativo</h3>
-                            <p>Fotografia</p>
+                       
+                        <img src="./images/black-nutrinutrition.jpg" alt="">
+                        <div class="overlay"> 
+                            
+                            <h3>Nutrition Label</h3>
+                            <p>First Project</p>
+                        
                         </div>
+                        
                     </div>
+                </a>
                     <div class="proyecto">
                         <img src="./images/images.jpeg" alt="">
                         <div class="overlay">
@@ -336,19 +347,28 @@
         <section id="contacto" class="contacto">
             <div class="contenido-seccion">
                 <h2>CONTACTO</h2>
-                <div class="fila">
+                <form id="formularie" class="fila" id="login" onsubmit="process(event)">
                                     <!-- FORMULARIO-->
 
                     <div class="col">
-                        <input type="text" placeholder="Tu nombre" name="" id="">
-                        <input type="text" placeholder="Numero telefonico" name="" id="">
-                        <input type="text" placeholder="Direccion de correo" name="" id="">
+                        <label for="name"></label>
+                        <p id="error-message"></p>
+                        <input type="text" placeholder="Tu nombre" name="name" id="name">
+                        <label for="tel"></label>
+                        <p id="error-message-phone"></p>
+                        <input type="tel" placeholder="Numero telefonico" name="phone" id="phone">
+                        <div class="alert alert-info" style="display: none;"></div>
+                        
+                        <label for="email"></label>
+                        <p id="error-message-email"></p>
+                        <input type="email" placeholder="Direccion de correo" name="email" id="email">
                         <input type="text" placeholder="Tema" name="" id="">
                         <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <button>
+                        <button type="submit">
                             Enviar Mensaje <i class="fa-sharp fa-solid fa-envelope-open"></i>
                             <span class="overlay"></span>
                         </button>
+                        
                     </div>
                     <!-- MAPA-->
                     <div class="col">
@@ -370,7 +390,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
                 <!-- FOOTER-->
@@ -387,6 +407,7 @@
             </div>
         </footer>
 
-        <script src="script.js"></script>
+        <script src="portafeuille.js"></script>
+        
 </body>
 </html>

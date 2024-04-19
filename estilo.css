@@ -606,6 +606,19 @@ margin: auto;
 
 
 /* seccion portafolio */
+
+#error-message, #error-message-email, #error-message-number, #error-message-phone{
+    font-size: 16px;
+    color: #ec1d06;
+    font-family: Arial, sans-serif;
+}
+#error-message, #error-message-email, #error-message-number, #error-message-phone{
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
 .portafolio{
     background-color: #1e2326;
     color: #fff;
@@ -677,7 +690,7 @@ margin: auto;
 .contacto{
     background-image: url(images/constacto.jpg);
     background-color: #081085;
-    color: #fff;
+    color: #090909;
     padding: 50px;
 }
 
@@ -755,6 +768,7 @@ margin: auto;
     position: absolute;
     top: 40%;
     background-color: #252A2E;
+    color: #fff;
     padding: 20px;
     max-width: 350px;
     left: 50%;
