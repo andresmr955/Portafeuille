@@ -929,15 +929,4 @@ footer .arriba{
         width: 100%;
     }
 }
-@media (min-width: 600px) {
-  .portafolio .galeria {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-/* Mejora para pantallas grandes */
-@media (min-width: 900px) {
-  .portafolio .galeria {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
