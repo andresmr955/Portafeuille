@@ -612,13 +612,6 @@ margin: auto;
 /* seccion portafolio */
 
 
-.proyecto {  
-    width: calc(33.333% - 20px);  /* Tres elementos por fila con espacio */
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
 
 #error-message, #error-message-email, #error-message-number, #error-message-phone{
     font-size: 16px;
@@ -650,17 +643,19 @@ margin: auto;
 }
 
 .portafolio .galeria {
-    display: flex;Add commentMore actions
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center; /* 🔥 Esto centra los hijos */
+    gap: 1rem;
 }
 
 .portafolio .galeria .proyecto{
     position: relative;
-    max-width: 340px;
+    max-width: 100%;
     height: fit-content;
     margin: 10px;
     cursor: pointer;
+    flex: 1 1 100%;
 }
 
 .portafolio .galeria .proyecto img {
@@ -698,6 +693,7 @@ margin: auto;
 .portafolio .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
 }
+
 
 
 /* SECCION CONTACTO */
@@ -856,6 +852,16 @@ footer .arriba{
 
 /* SECCION RESPONSIVE */
 
+
+
+/* Media query desktop: 3 columnas */
+@media (min-width: 1024px) {
+    .proyecto {
+        flex: 1 1 calc(33.333% - 1rem);
+        max-width: calc(33.333% - 1rem);
+    }
+}
+
 @media screen and (max-width:980px){
     nav{
         display: none;
@@ -909,22 +915,30 @@ footer .arriba{
     .curriculum .fila .derecha{
         margin-left: 20px;
     }
-
-    .portafolio .galeria{
-        display: block;
-        width: 100%;
-    }
-    .portafolio .galeria .proyecto{
-        max-width: 100%;
-    }
-    .portafolio .galeria .proyecto img{
-        width: 100%;
-    }
     .contacto .fila{
         display: block;
     }
     .contacto .fila .col{
         width: 100%;
     }
+    .proyecto {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 600px) {
+  .portafolio .galeria .proyecto {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+/* 💻 3 columnas desde 900px */
+@media (min-width: 900px) {
+  .portafolio .galeria .proyecto {
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+  }
 }
 
