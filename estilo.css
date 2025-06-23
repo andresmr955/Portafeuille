@@ -692,17 +692,7 @@ margin: auto;
     transition: 0.5s;
 
 }
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 0.5rem;
-  text-align: center;
-  margin-top: -60px;
-  position: relative;
-  z-index: 1;
-  font-size: 0.9rem;
-  border-radius: 0 0 8px 8px;
-}
+
 .portafolio .galeria .proyecto .overlay:hover{
     opacity: 1;
 }
