@@ -650,10 +650,9 @@ margin: auto;
 }
 
 .portafolio .galeria {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1rem;
+    display: flex;Add commentMore actions
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .portafolio .galeria .proyecto{
@@ -667,8 +666,7 @@ margin: auto;
 .portafolio .galeria .proyecto img {
     width: 100%;
     display: block;
-    height: auto;
-    border-radius: 8px;
+    
 }
 
 .portafolio .galeria .proyecto .overlay{
