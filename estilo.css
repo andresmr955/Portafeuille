@@ -856,10 +856,17 @@ footer .arriba{
 
 /* Media query desktop: 3 columnas */
 @media (min-width: 1024px) {
-    .proyecto {
-        flex: 1 1 calc(33.333% - 1rem);
-        max-width: calc(33.333% - 1rem);
-    }
+   .portafolio .galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 🔥 Cinco columnas iguales */
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .portafolio .galeria .proyecto {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width:980px){
@@ -884,8 +891,19 @@ footer .arriba{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+    .portafolio .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 1rem;
+    justify-items: center; /* Centra los hijos dentro de cada columna */
+  }
 
-}
+  .portafolio .galeria .proyecto {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
 @media screen and (max-width:700px){
     .sobremi .fila{
         display: block;
@@ -921,24 +939,7 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
-    .proyecto {
-    flex: 1 1 calc(50% - 1rem);
-    max-width: calc(50% - 1rem);
+    .portafolio .galeria {
+    grid-template-columns: 1fr;
   }
-}
-
-@media (min-width: 600px) {
-  .portafolio .galeria .proyecto {
-    flex: 1 1 calc(50% - 1rem);
-    max-width: calc(50% - 1rem);
-  }
-}
-
-/* 💻 3 columnas desde 900px */
-@media (min-width: 900px) {
-  .portafolio .galeria .proyecto {
-    flex: 1 1 calc(33.333% - 1rem);
-    max-width: calc(33.333% - 1rem);
-  }
-}
-
+}}
